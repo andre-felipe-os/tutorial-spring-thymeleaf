@@ -17,7 +17,7 @@ public class EmployeeController {
 	private EmployeeRepository employeeRepository;
 	
 	@GetMapping({"/", "/list", "/showEmployees"})
-	private ModelAndView showEMployees() {
+	public ModelAndView showEmployees() {
 		ModelAndView mav = new ModelAndView("list-employees");
 		List<Employee> list = employeeRepository.findAll();
 		mav.addObject("employees", list);
