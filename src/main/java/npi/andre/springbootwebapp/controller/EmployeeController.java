@@ -29,7 +29,7 @@ public class EmployeeController {
 
 	@GetMapping("/addEmployeeForm")
 	public ModelAndView addEmployeeForm() {
-		ModelAndView mav = new ModelAndView("add-employee-form");
+		ModelAndView mav = new ModelAndView("employee-data-form");
 		Employee newEmployee = new Employee();
 		mav.addObject("employee", newEmployee);
 		return mav;
@@ -43,7 +43,7 @@ public class EmployeeController {
 
 	@GetMapping("/showUpdateForm")
 	public ModelAndView showUpdateForm(@RequestParam Long employeeId) {
-		ModelAndView mav = new ModelAndView("add-employee-form");
+		ModelAndView mav = new ModelAndView("employee-data-form");
 		Employee employee = employeeRepository.findById(employeeId).get();
 		mav.addObject("employee", employee);
 		return mav;
