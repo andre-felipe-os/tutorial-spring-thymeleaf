@@ -51,7 +51,12 @@
 		<script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.12.1/datatables.min.js"></script>
 		<script>
 			$(document).ready(function() {
-				$("#employeeTable").DataTable();
+				$("#employeeTable").DataTable({
+					"aoColumnDefs": [{
+						"aTargets": [-1],
+						"bSortable": false
+					}]
+				});
 			});
 		</script>
 	</body>
