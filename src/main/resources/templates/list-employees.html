@@ -19,7 +19,7 @@
 				class="btn btn-primary mb-2">
 				Add Employee
 			</a>
-			<table class="table table-bordered table-striped">
+			<table class="table table-bordered table-striped" id="employeeTable">
 				<thead>
 					<tr>
 						<th>Name</th>
@@ -49,6 +49,11 @@
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.12.1/datatables.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#employeeTable").DataTable();
+			});
+		</script>
 	</body>
 
 </html>
