@@ -12,13 +12,17 @@
 		<div class="container">
 			<h2>List of Employees</h2>
 			<hr>
-			<a th:href="@{/addEmployeeForm}" class="btn btn-primary mb-2">Add Employee</a>
+			<a th:href="@{/addEmployeeForm}"
+				class="btn btn-primary mb-2">
+				Add Employee
+			</a>
 			<table class="table table-bordered table-striped">
 				<thead>
 					<tr>
 						<th>Name</th>
 						<th>Email</th>
 						<th>Department</th>
+						<th>Actions</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -26,6 +30,12 @@
 						<td th:text="${employee.name}"></td>
 						<td th:text="${employee.email}"></td>
 						<td th:text="${employee.department}"></td>
+						<td>
+							<a th:href="@{/showUpdateForm(employeeId=${employee.id})}"
+								class="btn btn-info">
+								Update
+							</a>
+						</td>
 					</tr>
 				</tbody>
 			</table>
