@@ -1,4 +1,4 @@
-package npi.andre.springbootwebapp.entity;
+package tutorial.springbootwebapp.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

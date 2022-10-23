@@ -1,4 +1,4 @@
-package npi.andre.springbootwebapp.controller;
+package tutorial.springbootwebapp.controller;
 
 import java.util.List;
 
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import npi.andre.springbootwebapp.entity.Employee;
-import npi.andre.springbootwebapp.repository.EmployeeRepository;
+import tutorial.springbootwebapp.entity.Employee;
+import tutorial.springbootwebapp.repository.EmployeeRepository;
 
 @Controller
 public class EmployeeController {

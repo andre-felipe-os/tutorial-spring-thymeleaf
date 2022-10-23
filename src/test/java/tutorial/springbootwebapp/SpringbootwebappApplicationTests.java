@@ -1,4 +1,4 @@
-package npi.andre.springbootwebapp;
+package tutorial.springbootwebapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
